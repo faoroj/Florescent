@@ -6,10 +6,17 @@ import { images } from '../constants';
 
 const RootLayout = () => {
   return (
-    <SafeAreaView>
+    <SafeAreaView className="h-full">
       <ScrollView contentContainerStyle={{height: '100%'}}>
-        <View>
-            <Text>Florescent rocks!</Text>
+        <View className="w-full flex justify-center min-h-[85vh] items-center px-4">
+          
+          <Image
+            source={images.loginimage}
+            className="w-[6008px] h-[490px]"
+            resizeMode='contain'
+          />
+          
+
         </View>
       </ScrollView>
     </SafeAreaView>
