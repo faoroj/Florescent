@@ -4,8 +4,8 @@
     "slug": "Florescent",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "icon": "./assets/icon.png",
+    "scheme": "Florescent",
     "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/images/splash.png",
