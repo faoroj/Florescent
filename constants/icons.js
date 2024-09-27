@@ -37,3 +37,7 @@ export const weddingicon = require('../assets/icons/wedding-icon.png');
 export const xicon = require('../assets/icons/x-icon.png');
 export const xnavicon = require('../assets/icons/x-nav-icon.png');
 export const yourorders = require('../assets/icons/your-orders.png');
+
+import downarrowblack from "../assets/icons/down-arrow-black.png";
+
+export default { downarrowblack };

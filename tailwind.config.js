@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./App.{js,jsx,ts,tsx}", "./<custom directory>/**/*.{js,jsx,ts,tsx}"],
+  content: ["./app/**/*.{js,jsx,ts,tsx}", "./components/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       colors: {
@@ -25,6 +25,9 @@ module.exports = {
         fmedium: ["Fredoka-Medium", "sans-serif"],
         fsemibold: ["Fredoka-SemiBold", "sans-serif"],
         fbold: ["Fredoka-Bold", "sans-serif"],
+      },
+      boxShadow: {
+        'custom-drop': '0 6px 4px rgba(0, 0, 0, 0.25)', 
       },
     },
   },
