@@ -1,29 +1,39 @@
-import bookmark from "../assets/icons/bookmark.png";
-import home from "../assets/icons/home.png";
-import plus from "../assets/icons/plus.png";
-import profile from "../assets/icons/profile.png";
-import leftArrow from "../assets/icons/left-arrow.png";
-import menu from "../assets/icons/menu.png";
-import search from "../assets/icons/search.png";
-import upload from "../assets/icons/upload.png";
-import rightArrow from "../assets/icons/right-arrow.png";
-import logout from "../assets/icons/logout.png";
-import eyeHide from "../assets/icons/eye-hide.png";
-import eye from "../assets/icons/eye.png";
-import play from "../assets/icons/play.png";
-
-export default {
-  play,
-  bookmark,
-  home,
-  plus,
-  profile,
-  leftArrow,
-  menu,
-  search,
-  upload,
-  rightArrow,
-  logout,
-  eyeHide,
-  eye,
-};
+export const accountsettings = require('../assets/account-settings.png');
+export const applepay = require('../assets/apple-pay.png');
+export const baby = require('../assets/baby.png');
+export const birthday = require('../assets/birthday.svg');
+export const cart = require('../assets/cart.png');
+export const chat = require('../assets/chat.png');
+export const collections = require('../assets/collections.png');
+export const creditcard = require('../assets/credit-card.png');
+export const currency = require('../assets/currency.png');
+export const customersupport = require('../assets/customer-support.png');
+export const easter = require('../assets/easter.png');
+export const facebookicon = require('../assets/facebook-icon.png');
+export const faq = require('../assets/faq.png');
+export const fontsettings = require('../assets/font-settings.png');
+export const getwell = require('../assets/get-well.png');
+export const gotocart = require('../assets/go-to-cart.png');
+export const googleicon = require('../assets/google-icon.png');
+export const graduation = require('../assets/graduation.svg');
+export const home = require('../assets/home.png');
+export const issue = require('../assets/issue.png');
+export const language = require('../assets/language.png');
+export const leftarrowblack = require('../assets/left-arrow-black.png');
+export const logout = require('../assets/logout.svg');
+export const microphone = require('../assets/microphone.png');
+export const moon = require('../assets/moon.png');
+export const notifications = require('../assets/notifications.png');
+export const paypal = require('../assets/paypal.png');
+export const profile = require('../assets/profile.png');
+export const rightarrowblack = require('../assets/right-arrow-black.png');
+export const rightarrow = require('../assets/right-arrow.png');
+export const search = require('../assets/search.png');
+export const share = require('../assets/share.png');
+export const sort = require('../assets/sort.png');
+export const star = require('../assets/star.png');
+export const typehere = require('../assets/type-here.png');
+export const weddingicon = require('../assets/wedding-icon.png');
+export const xicon = require('../assets/x-icon.png');
+export const xnavicon = require('../assets/x-nav-icon.png');
+export const yourorders = require('../assets/your-orders.png');
