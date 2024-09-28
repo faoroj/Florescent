@@ -23,7 +23,7 @@ const CustomButton = ({ title, handlePress, containerStyles, textStyles, isLoadi
       style={shadowStyles}
       disabled={isLoading}
     >
-      <Text className={`text-[28px] ${variant === 'outline' ? 'text-gray-400' : 'text-white'} font-fmedium ${textStyles}`}>{title}</Text>
+      <Text className={`text-[28px] ${variant === 'outline' ? 'text-gray-400' : 'text-white'} ${textStyles}`}>{title}</Text>
     </TouchableOpacity>
   )
 }
