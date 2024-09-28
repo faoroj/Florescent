@@ -1,4 +1,4 @@
-import { Text, View, ScrollView, Image } from 'react-native';
+import { Text, View, ScrollView, Image, TouchableOpacity } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { Redirect, router } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -30,27 +30,31 @@ const RootLayout = () => {
             variant="outline"
           />
 
-          <View className="flex flex-row justify-center items-center">
-            <Text>English United States</Text>
+          <View className="flex flex-row justify-center items-center mt-4">
+            <Text>English ({'United States'})</Text>
             <Image
               source={icons.downarrowblack}
-              className="mt-7 w-[19px] h-[21px]"
+              className="w-[19px] h-[21px]"
               resizeMode="contain"
             />
           </View>
 
-          <CustomButton 
-            title="Continue as guest"
-            handlePress={() => router.push('/sign-up')}
-            containerStyles="w-[75%] mt-[60px] mb-[80px]"
-            variant="outline"
-          />
-
-        
-          
+          <View className="w-[251px] h-[54px] rounded-xl bg-white justify-center items-center mt-10"        
+            style={{
+            shadowColor: 'black', 
+            shadowOpacity: 0.45,  
+            shadowOffset: { width: 0, height: 1 }, 
+            shadowRadius: 4, 
+            elevation: 4, 
+            }}>
+            <TouchableOpacity onPress={() => {/* navigate to forgot password */}}>
+              <Text className="text-[20px]">Continue as guest</Text>
+            </TouchableOpacity>
+          </View>
 
         </View>
       </ScrollView>
+      <StatusBar backgroundColor='white' barStyle='dark-content'/>
     </SafeAreaView>
   )
 }
