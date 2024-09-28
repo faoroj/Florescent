@@ -48,7 +48,7 @@ const RootLayout = () => {
             elevation: 4, 
             }}>
             <TouchableOpacity onPress={() => {/* navigate to forgot password */}}>
-              <Text className="text-[20px]">Continue as guest</Text>
+              <Text className="text-[20px] font-fmedium">Continue as guest</Text>
             </TouchableOpacity>
           </View>
 

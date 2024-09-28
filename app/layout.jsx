@@ -3,32 +3,31 @@ import { StyleSheet, Text, View } from 'react-native'
 import { SplashScreen, Stack } from 'expo-router';
 import { useFonts } from 'expo-font'
 
-// SplashScreen.preventAutoHideAsync();
+SplashScreen.preventAutoHideAsync();
 
 const RootLayout = () => {
-  
-    // const [fontsLoaded, error] = useFonts({
-    //     "Fredoka-Bold": require("../assets/fonts/Fredoka-Bold.ttf"),
-    //     "Fredoka-Light": require("../assets/fonts/Fredoka-Light.ttf"),
-    //     "Fredoka-Medium": require("../assets/fonts/Fredoka-Medium.ttf"),
-    //     "Fredoka-Regular": require("../assets/fonts/Fredoka-Regular.ttf"),
-    //     "Fredoka-SemiBold": require("../assets/fonts/Fredoka-SemiBold.ttf"),
-    // });
+  const [fontsLoaded, error] = useFonts({
+      "Fredoka-Medium": () => import("../assets/fonts/Fredoka-Medium.ttf"),
+      // "Fredoka-Bold": require("../assets/fonts/Fredoka-Bold.ttf"),
+      // "Fredoka-Light": require("../assets/fonts/Fredoka-Light.ttf"),
+      // "Fredoka-Regular": require("../assets/fonts/Fredoka-Regular.ttf"),
+      // "Fredoka-SemiBold": require("../assets/fonts/Fredoka-SemiBold.ttf"),
+  });
 
-    // useEffect(() => {
-    //   if (error) {
-    //     console.error(error);
-    //     return;
-    //   }
-    
-    //     if (fontsLoaded) {
-    //       SplashScreen.hideAsync();
-    //     }
-    //   }, [fontsLoaded, error]);
-    
-    //   if (!fontsLoaded) {
-    //     return null;
-    //   }
+  useEffect(() => {
+      if (error) {
+          console.error("Error loading fonts: ", error);
+          return;
+      }
+      
+      if (fontsLoaded) {
+          SplashScreen.hideAsync();
+      }
+  }, [fontsLoaded, error]);
+
+  if (!fontsLoaded) {
+      return null; 
+  }
     
   return (
     <Stack>
