@@ -11,6 +11,10 @@ import { useFonts } from 'expo-font';
 
 const SignIn = () => {
 
+  const { width } = Dimensions.get('window');
+  const scaleFont = (size) => (width / 400) * size; 
+  
+
   const socialMediaLinks = [
     { icon: icons.xicon, url: 'https://www.twitter.com' },
     { icon: icons.googleicon, url: 'https://www.google.com' },
@@ -31,8 +35,8 @@ const SignIn = () => {
     <SafeAreaView className="h-full">
       <ScrollView>
         <View className="w-full flex justify-start min-h-[85vh] px-4 my-6">
-          <Text className="text-[42px] font-regular mt-5">Welcome Back!</Text>
-          <Text className="text-primary-100 text-[26px] ml-10 mt-3">Sign in to continue</Text>
+          <Text style={{ fontSize: scaleFont(42) }}className="text-[42px] font-regular mt-5">Welcome Back!</Text>
+          <Text style={{ fontSize: scaleFont(26) }} className="text-primary-100 text-[26px] ml-10 mt-3">Sign in to continue</Text>
 
           <View className="flex flex-col items-center">
 
