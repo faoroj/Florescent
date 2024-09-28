@@ -7,9 +7,14 @@ import SocialMediaButton from '../../components/SocialMediaButton'
 import { Link, router } from 'expo-router'
 import FormField from '../../components/FormField'
 import * as Linking from 'expo-linking';
-
+import { useFonts } from 'expo-font';
 
 const SignIn = () => {
+
+  const [fontsLoaded] = useFonts({
+    "Fredoka-Medium": require("../../assets/fonts/Fredoka-Medium.ttf"),
+  });
+
 
   const socialMediaLinks = [
     { icon: icons.xicon, url: 'https://www.twitter.com' },
@@ -69,12 +74,11 @@ const SignIn = () => {
               ))}
             </View>
             
-            <View className="mt-4 flex-row">
-              <Text className="text-black">Don't have an account? 
+            <View className="flex flex-row justify-center items-center mt-4">
+              <Text className="text-black">Don't have an account?</Text>
                 <TouchableOpacity onPress={() => router.push('/sign-up')}>
-                  <Text className="text-primary-200 font-semibold">Sign up now!</Text>
+                  <Text className="text-primary-200 font-semibold"> Sign up now!</Text>
                 </TouchableOpacity>
-              </Text>
             </View>
 
           </View>
