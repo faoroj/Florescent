@@ -4,13 +4,9 @@ import { Redirect, router } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { images, icons } from '../constants';
 import CustomButton from '../components/CustomButton';
-import { useFonts } from 'expo-font';
 
 const RootLayout = () => {
-  const [fontsLoaded] = useFonts({
-    "Fredoka-Medium": require("../assets/fonts/Fredoka-Medium.ttf"),
-  });
-  
+
   return (
     <SafeAreaView className="h-full">
       <ScrollView contentContainerStyle={{height: '100%'}}>
@@ -36,7 +32,7 @@ const RootLayout = () => {
           />
 
           <View className="flex flex-row justify-center items-center mt-4">
-            <Text style={{ fontFamily: 'Fredoka-Medium', fontSize: 12 }}>English ({'United States'})</Text>
+            <Text>English ({'United States'})</Text>
             <Image
               source={icons.downarrowblack}
               className="w-[19px] h-[21px]"
@@ -53,7 +49,7 @@ const RootLayout = () => {
             elevation: 4, 
             }}>
             <TouchableOpacity onPress={() => {/* navigate to forgot password */}}>
-              <Text style={{ fontFamily: 'Fredoka-Medium', fontSize: 20 }}>Continue as guest</Text>
+              <Text>Continue as guest</Text>
             </TouchableOpacity>
           </View>
 

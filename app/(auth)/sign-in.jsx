@@ -11,11 +11,6 @@ import { useFonts } from 'expo-font';
 
 const SignIn = () => {
 
-  const [fontsLoaded] = useFonts({
-    "Fredoka-Medium": require("../../assets/fonts/Fredoka-Medium.ttf"),
-  });
-
-
   const socialMediaLinks = [
     { icon: icons.xicon, url: 'https://www.twitter.com' },
     { icon: icons.googleicon, url: 'https://www.google.com' },
@@ -44,14 +39,15 @@ const SignIn = () => {
             <FormField
               value={form.username}
               placeholder="Username"
-              handleChangeText={(text) => setform(text)}
+              handleChangeText={(e) => setform({ ... form, username:e })}
               otherStyles="mt-[70px]"
+              keyboardType='email-address'
             />
 
             <FormField
               value={form.password}
               placeholder="Password"
-              handleChangeText={(text) => setform(text)}
+              handleChangeText={(e) => setform({ ... form, password:e })}
               otherStyles="mt-[50px]"
             />
 

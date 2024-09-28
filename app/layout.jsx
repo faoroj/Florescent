@@ -1,27 +1,22 @@
 import { useEffect } from "react";
-import { StyleSheet, Text, View } from 'react-native'
-import { SplashScreen, Stack } from 'expo-router';
-import { useFonts } from 'expo-font'
+import { Stack } from 'expo-router';
+import * as SplashScreen from 'expo-splash-screen';
 
 // SplashScreen.preventAutoHideAsync();
 
-const RootLayout = () => {
-  // const [fontsLoaded] = useFonts({
-  //     "Fredoka-Medium": () => import("../assets/fonts/Fredoka-Medium.ttf"),
-  //     "Fredoka-Bold": require("../assets/fonts/Fredoka-Bold.ttf"),
-  //     "Fredoka-Light": require("../assets/fonts/Fredoka-Light.ttf"),
-  //     "Fredoka-Regular": require("../assets/fonts/Fredoka-Regular.ttf"),
-  //     "Fredoka-SemiBold": require("../assets/fonts/Fredoka-SemiBold.ttf"),
+export default function RootLayout() {
+  // const [loaded, error] = useFonts({
+  //   Fredoka500Medium,
   // });
 
   // useEffect(() => {
-  //     if (fontsLoaded) {
-  //         SplashScreen.hideAsync();
-  //     }
-  // }, [fontsLoaded, error]);
+  //   if (loaded || error) {
+  //     SplashScreen.hideAsync();
+  //   }
+  // }, [loaded, error]);
 
-  // if (!fontsLoaded) {
-  //     return null; 
+  // if (!loaded && !error) {
+  //   return null;
   // }
     
   return (
@@ -33,4 +28,3 @@ const RootLayout = () => {
   )
 }
 
-export default RootLayout

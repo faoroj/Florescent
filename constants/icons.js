@@ -39,6 +39,8 @@ import downarrowblack from "../assets/icons/down-arrow-black.png";
 import xicon from "../assets/icons/x-icon.png";
 import googleicon from "../assets/icons/google-icon.png";
 import facebookicon from "../assets/icons/facebook-icon.png";
+import visible from "../assets/icons/visible.png";
+import hidden from "../assets/icons/hidden.png";
 
 
-export default { downarrowblack, xicon, googleicon, facebookicon };
+export default { downarrowblack, xicon, googleicon, facebookicon, visible, hidden };

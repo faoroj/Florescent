@@ -19,13 +19,7 @@ module.exports = {
           400: "#626263",
         },
       },
-      fontFamily: {
-        flight: ["Fredoka-Light", "sans-serif"],
-        fregular: ["Fredoka-Regular", "sans-serif"],
-        fmedium: ["Fredoka-Medium", "sans-serif"],
-        fsemibold: ["Fredoka-SemiBold", "sans-serif"],
-        fbold: ["Fredoka-Bold", "sans-serif"],
-      },
+
       boxShadow: {
         'custom-drop': '0 6px 4px rgba(0, 0, 0, 0.25)', 
       },
