@@ -9,12 +9,10 @@ export const creditcard = require('../assets/icons/credit-card.png');
 export const currency = require('../assets/icons/currency.png');
 export const customersupport = require('../assets/icons/customer-support.png');
 export const easter = require('../assets/icons/easter.png');
-export const facebookicon = require('../assets/icons/facebook-icon.png');
 export const faq = require('../assets/icons/faq.png');
 export const fontsettings = require('../assets/icons/font-settings.png');
 export const getwell = require('../assets/icons/get-well.png');
 export const gotocart = require('../assets/icons/go-to-cart.png');
-export const googleicon = require('../assets/icons/google-icon.png');
 export const graduation = require('../assets/icons/graduation.svg');
 export const home = require('../assets/icons/home.png');
 export const issue = require('../assets/icons/issue.png');
@@ -34,10 +32,13 @@ export const sort = require('../assets/icons/sort.png');
 export const star = require('../assets/icons/star.png');
 export const typehere = require('../assets/icons/type-here.png');
 export const weddingicon = require('../assets/icons/wedding-icon.png');
-export const xicon = require('../assets/icons/x-icon.png');
 export const xnavicon = require('../assets/icons/x-nav-icon.png');
 export const yourorders = require('../assets/icons/your-orders.png');
 
 import downarrowblack from "../assets/icons/down-arrow-black.png";
+import xicon from "../assets/icons/x-icon.png";
+import googleicon from "../assets/icons/google-icon.png";
+import facebookicon from "../assets/icons/facebook-icon.png";
 
-export default { downarrowblack };
+
+export default { downarrowblack, xicon, googleicon, facebookicon };
