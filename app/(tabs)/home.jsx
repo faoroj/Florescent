@@ -1,4 +1,4 @@
-import { View, Text, ScrollView, Image, TextInput } from 'react-native'
+import { View, Text, ScrollView, Image, TextInput, FlatList } from 'react-native'
 import React, {useState} from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import Searchshop from '../../components/Searchshop';
@@ -6,47 +6,32 @@ import { images, icons } from '../../constants'
 import CustomButton from '../../components/CustomButton'
 import { Link, router } from 'expo-router'
 import {LinearGradient} from 'expo-linear-gradient';
+import Carousel from '../../components/Carousel';
+
+
+
+
 
 
 
 const Home = () => {
+
   return (
     <SafeAreaView className="h-full">
       <ScrollView>
-
+        
         <View className="w-full flex justify-center items-center min-h-[85vh] my-6">
 
           {/* Search Bar */}
           <Searchshop />
 
-          {/* Carousel */}
-          <View className="relative">
-
-            {/* Image with text and button overlay */}
-            <Image
-                source={images.mothersday} 
-                className="w-[428px] h-[225px] mt-5"
-                resizeMode="contain"
-            />
-
-              {/* Overlay container */}
-              <View className="absolute inset-0 flex justify-between">
-
-                {/* Header Text */}
-                <Text className="font-bold text-[18px]">Happy Mother's Day!</Text>
-
-                {/* Subtitle Text */}
-                <Text className="font-semibold text-[12px] max-w-[180px]">
-                  A mother's love is the heart of the family
-                </Text>
-
-                <CustomButton
-                    title="Shop now"
-                    handlePress={() => router.push('/home')}
-                    containerStyles="mt-10"
-                />
-              </View>
+          <View className="relative w-full"> 
+            <Carousel />
           </View>
+
+          
+          
+
 
           {/*Best Deals Section */}
           <LinearGradient
