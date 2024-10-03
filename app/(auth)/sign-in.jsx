@@ -53,7 +53,7 @@ const SignIn = () => {
 
             <CustomButton
               title="Login"
-              handlePress={submit}
+              handlePress={() => router.push('/home')}
               containerStyles="w-full mt-[65px]"
               isLoading={isSubmitting}
             />

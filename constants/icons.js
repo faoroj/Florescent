@@ -19,14 +19,11 @@ export const issue = require('../assets/icons/issue.png');
 export const language = require('../assets/icons/language.png');
 export const leftarrowblack = require('../assets/icons/left-arrow-black.png');
 export const logout = require('../assets/icons/logout.svg');
-export const microphone = require('../assets/icons/microphone.png');
 export const moon = require('../assets/icons/moon.png');
 export const notifications = require('../assets/icons/notifications.png');
 export const paypal = require('../assets/icons/paypal.png');
 export const profile = require('../assets/icons/profile.png');
 export const rightarrowblack = require('../assets/icons/right-arrow-black.png');
-export const rightarrow = require('../assets/icons/right-arrow.png');
-export const search = require('../assets/icons/search.png');
 export const share = require('../assets/icons/share.png');
 export const sort = require('../assets/icons/sort.png');
 export const star = require('../assets/icons/star.png');
@@ -41,6 +38,9 @@ import googleicon from "../assets/icons/google-icon.png";
 import facebookicon from "../assets/icons/facebook-icon.png";
 import visible from "../assets/icons/visible.png";
 import hidden from "../assets/icons/hidden.png";
+import search from "../assets/icons/search.png"
+import microphone from "../assets/icons/microphone.png"
+import rightarrowpurple from "../assets/icons/right-arrow.png"
 
 
-export default { downarrowblack, xicon, googleicon, facebookicon, visible, hidden };
+export default { downarrowblack, xicon, googleicon, facebookicon, visible, hidden, search, microphone, rightarrowpurple };
