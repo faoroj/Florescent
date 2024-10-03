@@ -56,6 +56,8 @@ const SignIn = () => {
               handlePress={() => router.push('/home')}
               containerStyles="w-full mt-[65px]"
               isLoading={isSubmitting}
+              buttonStyles='bg-primary rounded-3xl justify-center items-center min-h-[67px]'
+              textStyles="text-[28px] text-black"
             />
 
             <TouchableOpacity onPress={() => {/* navigate to forgot password */}}>

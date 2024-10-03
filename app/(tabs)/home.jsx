@@ -29,10 +29,6 @@ const Home = () => {
             <Carousel />
           </View>
 
-          
-          
-
-
           {/*Best Deals Section */}
           <LinearGradient
             colors={['#F0E3FF', '#FFFFFF']} // Define gradient colors
@@ -64,21 +60,27 @@ const Home = () => {
             />
 
             {/* Overlay container */}
-            <View className="absolute inset-0 px-4 py-16 flex justify-between">
-
-              {/* Header Text */}
-              <Text className="font-bold text-[26px] text-white max-w-[280px]">Embrace your garden's needs</Text>
+            <View className="absolute inset-0 px-6 py-16 flex justify-between h-[436px]">
+              <View>
+                {/* Header Text */}
+                <Text className="font-bold text-[26px] text-white max-w-[280px]">Embrace your garden's needs</Text>
 
                 {/* Subtitle Text */}
-                <Text className="font-regular text-[12px] text-white max-w-[220px]">
+                <Text className="font-regular text-[12px] text-white max-w-[220px] mt-4">
                   Nurturing each plant with care, ensures a blooming beauty that lasts
                 </Text>
+              </View>
 
-                <CustomButton
+                <View className="absolute bottom-0 right-0 items-center mb-3">
+                  <CustomButton
                     title="Read now"
                     handlePress={() => router.push('/home')}
-                    containerStyles="mt-10"
-                />
+                    containerStyles=""
+                    buttonStyles="bg-white rounded-[6px] justify-center items-center h-[44px] w-[213px]"
+                    textStyles="text-[18px] text-black font-semibold"
+                  />
+                </View>
+
             </View>
           </View>
 
@@ -108,6 +110,38 @@ const Home = () => {
                 />
             </View>
           </View>
+
+          {/*Shop for occasions*/}
+          <LinearGradient
+            colors={['#F0E3FF', '#FFFFFF']} // Define gradient colors
+            start={{ x: 0, y: 0 }} // Start point for the gradient
+            end={{ x: 0, y: 1 }} // End point for the gradient (vertical gradient)
+            className=" h-[260px] w-full mt-5 " // Gradient container styling
+          >
+
+            <View className="flex flex-row justify-between items-center p-4">
+              <Text className="font-regular text-[26px]">Shop for occasions</Text>
+              <View className="flex flex-row items-center">
+                <Text className="font-regular text-[12px] text-primary-200">Show More</Text>
+                <Image
+                  source={icons.rightarrowpurple}
+                  className="w-[20px] h-[20px]"
+                  resizeMode="contain"
+                />
+              </View>
+            </View>
+
+          </LinearGradient>
+
+          {/*Feedback*/}
+          <View className="h-[190px] w-[428px] flex flex-col justify-start items-center p-8">
+            <Text className="text-[18px]">Are you enjoying the app?</Text>
+
+            <Text className="text-[12px]">Privacy Policy | Terms of use</Text>
+          </View>
+
+
+
 
 
         </View>

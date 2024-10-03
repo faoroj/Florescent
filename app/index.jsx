@@ -22,13 +22,16 @@ const RootLayout = () => {
             title="Login"
             handlePress={() => router.push('/sign-in')}
             containerStyles="w-full mt-7 "
+            buttonStyles="bg-primary rounded-3xl justify-center items-center min-h-[67px]"
+            textStyles="text-[28px] text-black"
           />
 
           <CustomButton 
             title="Create Account"
             handlePress={() => router.push('/sign-up')}
             containerStyles="w-full mt-7"
-            variant="outline"
+            buttonStyles="border-4 border-primary rounded-3xl bg-white justify-center items-center min-h-[67px]"
+            textStyles="text-[28px] text-black"
           />
 
           <View className="flex flex-row justify-center items-center mt-4">
@@ -48,7 +51,7 @@ const RootLayout = () => {
             shadowRadius: 4, 
             elevation: 4, 
             }}>
-            <TouchableOpacity onPress={() => {/* navigate to forgot password */}}>
+            <TouchableOpacity onPress={() => router.push('/home')}>
               <Text>Continue as guest</Text>
             </TouchableOpacity>
           </View>

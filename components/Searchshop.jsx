@@ -6,7 +6,7 @@ const Searchshop = () => {
   return (
     // Search Bar
     <View
-      className="w-[75%] flex-row justify-center rounded-3xl items-center bg-white p-2"
+      className="w-[75%] flex-row justify-center rounded-3xl items-center bg-white p-1"
       style={{ borderWidth: 2, borderColor: '#E5D4FF', width: '75%' }}
     >
       {/* Left side: Image */}

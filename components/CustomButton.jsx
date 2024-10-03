@@ -1,10 +1,10 @@
 import { TouchableOpacity, Text } from 'react-native'
 import React from 'react'
 
-const CustomButton = ({ title, handlePress, containerStyles, textStyles, isLoading, variant  }) => {
-    const buttonStyles = variant === 'outline' 
-    ? 'border-4 border-primary rounded-3xl bg-white justify-center items-center min-h-[67px]' 
-    : 'bg-primary rounded-3xl justify-center items-center min-h-[67px]';
+const CustomButton = ({ title, handlePress, containerStyles, textStyles, isLoading, buttonStyles  }) => {
+    // const buttonStyles = variant1 === 'outline' 
+    // ? 'border-4 border-primary rounded-3xl bg-white justify-center items-center min-h-[67px]' 
+    // : 'bg-primary rounded-3xl justify-center items-center min-h-[67px]';
 
     const shadowStyles = {
       shadowColor: 'black', // Set the shadow color to black
@@ -23,7 +23,7 @@ const CustomButton = ({ title, handlePress, containerStyles, textStyles, isLoadi
       style={shadowStyles}
       disabled={isLoading}
     >
-      <Text className={`text-[28px] ${variant === 'outline' ? 'text-gray-400' : 'text-white'} ${textStyles}`}>{title}</Text>
+      <Text className={`${textStyles}`}>{title}</Text>
     </TouchableOpacity>
   )
 }
