@@ -66,3 +66,36 @@ export const navLinks = [
         path: "/"
     },
   ];
+
+  export const categories = [
+    {
+        id: "type",
+        title: "Type",
+        image: images.typeimage,
+        path: "/"
+    },
+    {
+        id: "season",
+        title: "Season",
+        image: images.seasonimage,
+        path: "/"
+    },
+    {
+        id: "occasion",
+        title: "Occasion",
+        image: images.occasionimage,
+        path: "/"
+    },
+    {
+        id: "meaning",
+        title: "Meaning",
+        image: images.meaningimage,
+        path: "/"
+    },
+    {
+        id: "color",
+        title: "Color",
+        image: images.colorimage,
+        path: "/"
+    },
+  ];

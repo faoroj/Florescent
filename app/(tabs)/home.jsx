@@ -13,9 +13,9 @@ import Carousel from '../../components/Carousel';
 const Home = () => {
 
   return (
-    <SafeAreaView className="h-full">
+    <SafeAreaView className="h-full bg-white">
       <ScrollView>
-        <View className="w-full flex justify-center items-center min-h-[85vh] my-6">
+        <View className="w-full flex justify-center items-center min-h-[85vh] mt-6">
 
           {/* Search Bar */}
           <Searchshop />
@@ -172,7 +172,7 @@ const Home = () => {
           </LinearGradient>
 
           {/*Feedback*/}
-          <View className="h-[190px] w-[428px] flex flex-col justify-start items-center p-8">
+          <View className="h-[190px] w-[428px] bg-gray-100 flex flex-col justify-start items-center p-8">
             <Text className="text-[18px]">Are you enjoying the app?</Text>
             <TouchableOpacity
               className="rounded-xl border w-[167px] h-[49px] flex justify-center items-center my-5"
