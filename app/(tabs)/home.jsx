@@ -1,11 +1,11 @@
-import { View, Text, ScrollView, Image, TextInput, FlatList, TouchableOpacity } from 'react-native'
+import { View, Text, ScrollView, Image, TextInput, TouchableOpacity, ImageBackground } from 'react-native'
 import React, {useState} from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import Searchshop from '../../components/Searchshop';
 import { images, icons } from '../../assets'
 import { occasions } from '../../constants';
 import CustomButton from '../../components/CustomButton'
-import { Link, router } from 'expo-router'
+import { router } from 'expo-router'
 import {LinearGradient} from 'expo-linear-gradient';
 import Carousel from '../../components/Carousel';
 
@@ -15,7 +15,6 @@ const Home = () => {
   return (
     <SafeAreaView className="h-full">
       <ScrollView>
-        
         <View className="w-full flex justify-center items-center min-h-[85vh] my-6">
 
           {/* Search Bar */}
@@ -81,27 +80,42 @@ const Home = () => {
           </View>
 
           {/*Sustainable Floristry*/}
-          <View className="relative my-5">
-            <Image
+          
+            <ImageBackground
               source={images.sustainablefloristry} 
-              className="w-[428px] h-[315px]"
-              resizeMode="contain"
-            />
-
-            {/* Overlay container */}
-            <View className="absolute inset-0 px-6 py-8 flex justify-between h-[315px]">
-
-              {/* Header Text */}
-              <View>
-                <Text className="font-bold text-[26px] text-white max-w-[280px]">Sustainable Floristry</Text>
-
-                {/* Subtitle Text */}
-                <Text className="font-regular text-[12px] text-white max-w-[220px]">
-                  Reducing waste and providing eco-friendly flowers for bouquets 
+              className="w-full h-[315px] flex items-center justify-between"
+              resizeMode="cover"
+            >
+              <View className="max-w-[250px] gap-y-5 ml-[100px] mt-1">
+                <Text className="font-bold text-[26px] text-white">Sustainable Floristry</Text>
+                <Text className="font-regular text-[12px] text-white">
+                    Reducing waste and providing eco-friendly flowers for bouquets 
                 </Text>
               </View>
 
-                <View className="absolute bottom-0 right-0 items-center mb-3">
+              <CustomButton
+                title="Read now"
+                handlePress={() => router.push('/home')}
+                containerStyles="mb-5"
+                buttonStyles="bg-white rounded-[6px] justify-center items-center h-[44px] w-[213px]"
+                textStyles="text-[18px] text-black font-semibold"
+              />              
+            </ImageBackground>
+
+            {/* Overlay container */}
+            {/* <View className="absolute inset-0 px-6 py-16 flex justify-between h-[315px] flex-col items-center"> */}
+
+              {/* Header Text */}
+              {/* <View className="">
+                <Text className="font-bold text-[26px] text-white">Sustainable Floristry</Text> */}
+
+                {/* Subtitle Text */}
+                {/* <Text className="font-regular text-[12px] text-white mt-4 max-w-[220px]">
+                  Reducing waste and providing eco-friendly flowers for bouquets 
+                </Text>
+              </View> */}
+
+                {/* <View className="w-full flex justify-center items-center">
                   <CustomButton
                     title="Read now"
                     handlePress={() => router.push('/home')}
@@ -109,9 +123,9 @@ const Home = () => {
                     buttonStyles="bg-white rounded-[6px] justify-center items-center h-[44px] w-[213px]"
                     textStyles="text-[18px] text-black font-semibold"
                   />
-                </View>
-            </View>
-          </View>
+                </View> */}
+            {/* </View> */}
+          
 
           {/*Shop for occasions*/}
           <LinearGradient
