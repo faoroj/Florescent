@@ -30,10 +30,10 @@ const Carousel = () => {
     <View className="relative">
       <Image
         source={item.image}
-        className="w-[428px] h-[225px] mt-5"
+        className="w-[428px] h-[225px]"
         resizeMode="cover"
       />
-      <View className="absolute inset-0 flex flex-col justify-between py-10 px-3">
+      <View className="absolute inset-0 flex flex-col justify-between py-6 px-3">
         <Text className="font-bold text-[18px]">{item.header}</Text>
         <Text className="font-semibold text-[12px] max-w-[180px]">
           {item.content}

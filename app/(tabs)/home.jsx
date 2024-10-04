@@ -14,11 +14,16 @@ const Home = () => {
 
   return (
     <SafeAreaView className="h-full bg-white">
-      <ScrollView>
-        <View className="w-full flex justify-center items-center min-h-[85vh] mt-6">
 
-          {/* Search Bar */}
-          <Searchshop />
+      <View className="w-full flex justify-start items-center my-6">
+        {/* Search Bar */}
+        <Searchshop />
+      </View>
+
+      <ScrollView>
+        <View className="w-full flex justify-center items-center min-h-[85vh]">
+
+
 
           <View className="relative w-full"> 
             <Carousel />
