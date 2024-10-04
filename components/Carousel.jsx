@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, Image, FlatList } from 'react-native';
-import { images } from '../constants'; 
+import { images } from '../assets'; 
 import CustomButton from './CustomButton'
 
 const carouselData = [

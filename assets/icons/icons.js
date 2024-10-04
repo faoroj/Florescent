@@ -1,0 +1,18 @@
+import downarrowblack from "./down-arrow-black.png";
+import xicon from "./x-icon.png";
+import googleicon from "./google-icon.png";
+import facebookicon from "./facebook-icon.png";
+import visible from "./visible.png";
+import hidden from "./hidden.png";
+import search from "./search.png"
+import microphone from "./microphone.png"
+import rightarrowpurple from "./right-arrow.png"
+import birthday from "./birthday.png"
+import wedding from "./wedding-icon.png"
+import graduation from "./graduation.png"
+import baby from "./baby.png"
+import easter from "./easter.png"
+import getwell from "./get-well.png"
+
+
+export default { downarrowblack, xicon, googleicon, facebookicon, visible, hidden, search, microphone, rightarrowpurple, birthday, wedding, graduation, baby, easter, getwell };

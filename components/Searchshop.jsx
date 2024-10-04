@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, Image, TextInput } from 'react-native';
-import { icons } from '../constants'; // Adjust this import based on the actual path
+import { icons } from '../assets'; // Adjust this import based on the actual path
 
 const Searchshop = () => {
   return (

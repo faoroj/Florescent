@@ -1,7 +1,7 @@
 import { View, Text, Image, ScrollView, TouchableOpacity, Dimensions } from 'react-native'
 import React, { useState } from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
-import { images, icons } from '../../constants'
+import { icons } from '../../assets'
 import CustomButton from '../../components/CustomButton'
 import SocialMediaButton from '../../components/SocialMediaButton'
 import { Link, router } from 'expo-router'

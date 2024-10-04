@@ -1,4 +1,68 @@
-import icons from "./icons";
-import images from "./images";
+import { images, icons } from '../assets'
 
-export { icons, images };
+export const navLinks = [
+    {
+        id: "home",
+        title: "Home",
+        path: "/"
+    },
+    {
+        id: "about",
+        title: "About",
+        path: "/AboutUs"
+    },
+    {
+        id: "visit",
+        title: "Visit",
+        path: "/VisitUs"
+    },
+    {
+        id: "explore",
+        title: "Explore",
+        path: "/Explore"
+    },
+    {
+        id: "learn",
+        title: "Learn",
+        path: "/Learn"
+    },
+  ];
+
+  export const occasions = [
+    {
+        id: "birthday",
+        title: "Birthday",
+        icon: icons.birthday,
+        path: "/"
+    },
+    {
+        id: "wedding",
+        title: "Wedding",
+        icon: icons.wedding,
+        path: "/"
+    },
+    {
+        id: "graduation",
+        title: "Graduation",
+        icon: icons.graduation,
+        path: "/"
+    },
+    {
+        id: "baby",
+        title: "Baby",
+        icon: icons.baby,
+        path: "/"
+    },
+    {
+        id: "easter",
+        title: "Easter",
+        icon: icons.easter,
+        path: "/"
+    },
+    {
+        id: "get well",
+        title: "Get Well",
+        icon: icons.getwell,
+        path: "/"
+    },
+  ];

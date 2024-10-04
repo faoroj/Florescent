@@ -2,7 +2,7 @@ import { Text, View, ScrollView, Image, TouchableOpacity } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { Redirect, router } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { images, icons } from '../constants';
+import { images, icons } from '../assets';
 import CustomButton from '../components/CustomButton';
 
 const RootLayout = () => {

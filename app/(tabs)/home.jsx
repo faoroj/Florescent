@@ -1,17 +1,13 @@
-import { View, Text, ScrollView, Image, TextInput, FlatList } from 'react-native'
+import { View, Text, ScrollView, Image, TextInput, FlatList, TouchableOpacity } from 'react-native'
 import React, {useState} from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import Searchshop from '../../components/Searchshop';
-import { images, icons } from '../../constants'
+import { images, icons } from '../../assets'
+import { occasions } from '../../constants';
 import CustomButton from '../../components/CustomButton'
 import { Link, router } from 'expo-router'
 import {LinearGradient} from 'expo-linear-gradient';
 import Carousel from '../../components/Carousel';
-
-
-
-
-
 
 
 const Home = () => {
@@ -85,29 +81,35 @@ const Home = () => {
           </View>
 
           {/*Sustainable Floristry*/}
-          <View className="relative">
+          <View className="relative my-5">
             <Image
               source={images.sustainablefloristry} 
-              className="w-[428px] h-[315px] my-5"
+              className="w-[428px] h-[315px]"
               resizeMode="contain"
             />
 
             {/* Overlay container */}
-            <View className="absolute inset-0 px-4 py-16 flex justify-between">
+            <View className="absolute inset-0 px-6 py-8 flex justify-between h-[315px]">
 
               {/* Header Text */}
-              <Text className="font-bold text-[26px] text-white max-w-[280px]">Sustainable Floristry</Text>
+              <View>
+                <Text className="font-bold text-[26px] text-white max-w-[280px]">Sustainable Floristry</Text>
 
                 {/* Subtitle Text */}
                 <Text className="font-regular text-[12px] text-white max-w-[220px]">
                   Reducing waste and providing eco-friendly flowers for bouquets 
                 </Text>
+              </View>
 
-                <CustomButton
+                <View className="absolute bottom-0 right-0 items-center mb-3">
+                  <CustomButton
                     title="Read now"
                     handlePress={() => router.push('/home')}
-                    containerStyles="mt-10"
-                />
+                    containerStyles=""
+                    buttonStyles="bg-white rounded-[6px] justify-center items-center h-[44px] w-[213px]"
+                    textStyles="text-[18px] text-black font-semibold"
+                  />
+                </View>
             </View>
           </View>
 
@@ -131,17 +133,42 @@ const Home = () => {
               </View>
             </View>
 
+            <View className="flex flex-row flex-wrap justify-between px-10">
+            {occasions.map((occasion, index) => (
+
+              <TouchableOpacity
+                key={index}
+                className={`rounded-xl border w-[48%] h-[49px] flex justify-center items-center
+                  ${index === 0 || index === 1 ? 'bg-primary' : ''}
+                  ${index < 4 ? 'mb-4' : 'mb-0'}`}
+              >
+                
+                <View className="flex flex-row justify-center px-3 items-center">
+                  <Image
+                  source={occasion.icon}
+                  className="w-[24px] h-[24px] "
+                  resizeMode='contain'
+                  />
+                  <Text className={`flex-1 text-[18px] text-center ${index === 0 || index === 1 ? 'text-white' : ''}`}>{ occasion.title }</Text>
+                </View>
+              </TouchableOpacity>
+
+              ))}
+            </View>
           </LinearGradient>
 
           {/*Feedback*/}
           <View className="h-[190px] w-[428px] flex flex-col justify-start items-center p-8">
             <Text className="text-[18px]">Are you enjoying the app?</Text>
+            <TouchableOpacity
+              className="rounded-xl border w-[167px] h-[49px] flex justify-center items-center my-5"
+            >
+            <Text className="text-[16px] font-semibold">Give us Feedback</Text>
+            </TouchableOpacity>
+
 
             <Text className="text-[12px]">Privacy Policy | Terms of use</Text>
           </View>
-
-
-
 
 
         </View>
