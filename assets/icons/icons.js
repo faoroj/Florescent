@@ -13,6 +13,13 @@ import graduation from "./graduation.png"
 import baby from "./baby.png"
 import easter from "./easter.png"
 import getwell from "./get-well.png"
+import home from "./home.png"
+import collections from "./collections.png"
+import profile from "./profile.png"
+import cart from "./cart.png"
 
 
-export default { downarrowblack, xicon, googleicon, facebookicon, visible, hidden, search, microphone, rightarrowpurple, birthday, wedding, graduation, baby, easter, getwell };
+export default { downarrowblack, xicon, googleicon, facebookicon, visible, hidden, search, microphone, 
+    rightarrowpurple, birthday, wedding, graduation, baby, easter, getwell, home, collections, cart, profile 
+
+};
