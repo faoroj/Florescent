@@ -10,7 +10,8 @@ import occasionimage from './occasion-image.png'
 import meaningimage from './meaning-image.png'
 import colorimage from './color-image.png'
 import pinkdaisies from './pink-daisies.png'
+import emilia from './emilia.png'
 
 
 export default { loginimage, mothersday, sustainablefloristry, flowercare, 
-    spring, wedding, typeimage, seasonimage, occasionimage, meaningimage, colorimage, pinkdaisies };
+    spring, wedding, typeimage, seasonimage, occasionimage, meaningimage, colorimage, pinkdaisies, emilia };

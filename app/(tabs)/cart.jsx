@@ -61,9 +61,31 @@ const Cart = () => {
           </View>
 
           {/* Pay Details Container */}
-          <View className="bg-gray-100 w-full h-[204px] mt-10">
-          </View>
+          <View className="bg-gray-100 w-full h-[204px] mt-10 py-4 px-4 flex flex-col justify-evenly">
 
+            <View className="flex flex-row justify-between items-center">
+              <Text>Subtotal</Text>
+              <Text>$99.00</Text>
+            </View>
+
+            <View className="flex flex-row justify-between items-center">
+              <Text>Estimated Tax</Text>
+              <Text>TBD</Text>
+            </View>
+
+            <View className="flex flex-row justify-between items-center">
+              <Text>Shipping & Handling</Text>
+              <Text className="font-black text-primary-200">FREE</Text>
+            </View>
+
+            <View className="border-b border-gray-300 w-full my-4" />
+
+            <View className="flex flex-row justify-between items-center">
+              <Text className="font-black">Estimated Total</Text>
+              <Text className="font-black">$99.00</Text>
+            </View>
+
+          </View>
 
           {/* Checkout Button */}
           <CustomButton
