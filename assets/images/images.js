@@ -9,6 +9,8 @@ import seasonimage from './season-image.png'
 import occasionimage from './occasion-image.png'
 import meaningimage from './meaning-image.png'
 import colorimage from './color-image.png'
+import pinkdaisies from './pink-daisies.png'
 
 
-export default { loginimage, mothersday, sustainablefloristry, flowercare, spring, wedding, typeimage, seasonimage, occasionimage, meaningimage, colorimage, };
+export default { loginimage, mothersday, sustainablefloristry, flowercare, 
+    spring, wedding, typeimage, seasonimage, occasionimage, meaningimage, colorimage, pinkdaisies };

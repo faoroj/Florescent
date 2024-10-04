@@ -17,9 +17,12 @@ import home from "./home.png"
 import collections from "./collections.png"
 import profile from "./profile.png"
 import cart from "./cart.png"
+import plus from "./plus.png"
+import minus from "./minus.png"
+import phone from "./phone.png"
 
 
 export default { downarrowblack, xicon, googleicon, facebookicon, visible, hidden, search, microphone, 
-    rightarrowpurple, birthday, wedding, graduation, baby, easter, getwell, home, collections, cart, profile 
+    rightarrowpurple, birthday, wedding, graduation, baby, easter, getwell, home, collections, cart, profile, plus, minus, phone
 
 };
