@@ -84,7 +84,7 @@ const Carousel = () => {
             <View
               key={index}
               className={`rounded-full h-[8px] w-[8px] ${
-                activeIndex === index ? 'bg-primary-200' : 'bg-gray-500'
+                activeIndex === index ? 'bg-primary-200' : 'bg-gray-300'
               }`}
             />
           ))}

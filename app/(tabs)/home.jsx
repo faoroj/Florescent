@@ -3,7 +3,7 @@ import React, {useState} from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import Searchshop from '../../components/Searchshop';
 import { images, icons } from '../../assets'
-import { occasions } from '../../constants';
+import { occasions, bestdeals } from '../../constants';
 import CustomButton from '../../components/CustomButton'
 import { router } from 'expo-router'
 import {LinearGradient} from 'expo-linear-gradient';
@@ -47,6 +47,26 @@ const Home = () => {
                   resizeMode="contain"
                 />
               </View>
+            </View>
+
+
+            <View className="pl-4 flex flex-row justify-start items-center">
+            {bestdeals.map((deal, index) => (
+              <View className="flex flex-col">
+                <Image 
+                  source={deal.image}
+                  className="w-[137px] h-[127px]"
+                  resizeMode='contain'
+                />
+                <View>
+                  <Text className="text-[14px]">{deal.title}</Text>
+                  <Text className="text-[12px]">Starting from 
+                    <Text className="text-[10px] font-regular text-primary-200"> $</Text>
+                    <Text className="text-[14px] font-bold text-primary-200">99</Text>
+                  </Text>
+                </View>
+              </View>
+            ))}
             </View>
 
           </LinearGradient>

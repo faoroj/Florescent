@@ -129,5 +129,36 @@ export const navLinks = [
         subhead: "",
         link: "/"
     },
+  ];
+
+  export const bestdeals = [
+    {
+        id: "greenlillies",
+        image: images.greenlillies,
+        title: "Green Lillies",
+        subhead: "Starting from $99",
+        link: "/"
+    },
+    {
+        id: "pinkdaisies",
+        image: images.pinkdaisies,
+        title: "Pink Daisies",
+        subhead: "Starting from $99",
+        link: "/"
+    },
+    {
+        id: "poppyflower",
+        image: images.poppyflower,
+        title: "Poppy Flower",
+        subhead: "Starting from $99",
+        link: "/"
+    },
+    {
+        id: "orangeblossom",
+        image: images.orangeblossom,
+        title: "Orange Blossoms",
+        subhead: "Starting from $99",
+        link: "/"
+    },
 
   ];
