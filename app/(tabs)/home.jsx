@@ -34,7 +34,7 @@ const Home = () => {
             colors={['#F0E3FF', '#FFFFFF']} // Define gradient colors
             start={{ x: 0, y: 0 }} // Start point for the gradient
             end={{ x: 0, y: 1 }} // End point for the gradient (vertical gradient)
-            className=" h-[260px] w-full mt-10 " // Gradient container styling
+            className=" h-[260px] w-full mt-7 " // Gradient container styling
           >
 
             <View className="flex flex-row justify-between items-center p-4">

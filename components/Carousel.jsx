@@ -1,5 +1,5 @@
-import React from 'react';
-import { View, Text, Image, FlatList } from 'react-native';
+import React, {useState} from 'react';
+import { View, Text, Image, FlatList, Dimensions } from 'react-native';
 import { images } from '../assets'; 
 import CustomButton from './CustomButton'
 
@@ -24,7 +24,18 @@ const carouselData = [
     },
   ];
 
+const screenWidth = Dimensions.get('window').width;
+
+
 const Carousel = () => {
+
+  const [activeIndex, setActiveIndex] = useState(0);
+  const handleScroll = (event) => {
+    const offsetX = event.nativeEvent.contentOffset.x;
+    const currentIndex = Math.round(offsetX / screenWidth);
+    setActiveIndex(currentIndex);
+  };
+
 
   const renderItem = ({ item }) => (
     <View className="relative">
@@ -52,7 +63,7 @@ const Carousel = () => {
   return (
     <View>
       {/* Carousel */}
-      <View className="h-[260px]">
+      <View className="h-[250px]">
           <FlatList
           data={carouselData}
           renderItem={renderItem}
@@ -62,14 +73,21 @@ const Carousel = () => {
           snapToInterval={428} 
           snapToAlignment="start"
           decelerationRate="fast"
+          onScroll={handleScroll}
+          scrollEventThrottle={16} // Reduces lag when scrolling
           />
       </View>
       
       {/* Carousel Indicators */}
       <View className='flex flex-row justify-center items-center gap-2'>
-        <View className="rounded-full h-[8px] w-[8px] bg-primary-200"></View>
-        <View className="rounded-full h-[8px] w-[8px] bg-gray-500"></View>
-        <View className="rounded-full h-[8px] w-[8px] bg-gray-500"></View>
+        {carouselData.map((_, index) => (
+            <View
+              key={index}
+              className={`rounded-full h-[8px] w-[8px] ${
+                activeIndex === index ? 'bg-primary-200' : 'bg-gray-500'
+              }`}
+            />
+          ))}
       </View>
 
     </View>
