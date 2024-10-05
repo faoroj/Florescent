@@ -99,3 +99,35 @@ export const navLinks = [
         path: "/"
     },
   ];
+
+  export const profileoptions = [
+    {
+        id: "orders",
+        icon: icons.yourorders,
+        title: "Your Orders",
+        subhead: "View Your Previous Orders",
+        link: "/"
+    },
+    {
+        id: "account settings",
+        icon: icons.accountsettings,
+        title: "Account Settings",
+        subhead: "Personalize account settings",
+        link: "/"
+    },
+    {
+        id: "customer support",
+        icon: icons.customersupport,
+        title: "Customer support",
+        subhead: "Contact us via phone or chat",
+        link: "/"
+    },
+    {
+        id: "logout",
+        icon: icons.logout,
+        title: "Logout",
+        subhead: "",
+        link: "/"
+    },
+
+  ];

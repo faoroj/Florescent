@@ -2,6 +2,7 @@ import { View, Text, ScrollView, Image } from 'react-native'
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { icons, images } from '../../assets'
+import { profileoptions } from '../../constants';
 
 const Profile = () => {
   return (
@@ -28,30 +29,39 @@ const Profile = () => {
             {/* Username */}
             <Text className="text-[22px] mt-3">Emilia Delaney</Text>
 
+
+            {profileoptions.map((option, index) => (
             <View className="flex flex-row mt-4">
 
               {/* SL Icon Div */}
-              <View className="rounded-full bg-primary w-[67px] h-[67px]" style={{ opacity: 0.35 }}></View>
+              <View className="rounded-full bg-[#F1E5FF] w-[67px] h-[67px] flex justify-center items-center">
+                <Image 
+                  source={option.icon}
+                  className="w-[32px] h-[32px]"
+                  resizeMode="contain"
+                />
+              </View>
 
               {/* SR Box */}
-              <View className="flex flex-row">
+              <View className="flex flex-row justify-between items-center w-[290px] h-[67px] bg-gray-100 py-2 px-2 ml-2">
 
-                <View className="w-[307px] h-[67px] bg-gray-100 py-2 px-2">
-                  <Text className="text-[22px]">Your Orders</Text>
-                  <Text className="text-[14px]">View Your Previous Orders</Text>
+                <View>
+                  <Text className="text-[22px] font-semibold">{option.title}</Text>
+                  <Text className="text-[14px]">{option.subhead}</Text>
                 </View>
 
-                <View className="flex justify-center items-center">
-                  <Image
-                    source={icons.rightarrowpurple} 
-                    className="w-[23px] h-[26px] rounded-full"
-                    resizeMode="contain"
-                  />
-                </View>
-
+                
+                <Image
+                  source={icons.rightarrowpurple} 
+                  className="w-[23px] h-[26px] rounded-full"
+                  resizeMode="contain"
+                />
+                
               </View>
 
             </View>
+
+            ))}
 
           </View>
 

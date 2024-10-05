@@ -20,9 +20,17 @@ import cart from "./cart.png"
 import plus from "./plus.png"
 import minus from "./minus.png"
 import phone from "./phone.png"
+import accountsettings from "./account-settings.png"
+import yourorders from "./your-orders.png"
+import customersupport from "./customer-support.png"
+import logout from "./logout.png"
+
+import language from "./language.png"
+
 
 
 export default { downarrowblack, xicon, googleicon, facebookicon, visible, hidden, search, microphone, 
-    rightarrowpurple, birthday, wedding, graduation, baby, easter, getwell, home, collections, cart, profile, plus, minus, phone
+    rightarrowpurple, birthday, wedding, graduation, baby, easter, getwell, home, collections, cart, profile, plus, minus, phone, accountsettings,
+    language, yourorders, customersupport, logout
 
 };
