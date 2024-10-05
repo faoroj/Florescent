@@ -1,5 +1,5 @@
-import { View, Text, ScrollView, Image, TextInput, TouchableOpacity, ImageBackground } from 'react-native'
-import React, {useState} from 'react'
+import { View, Text, ScrollView, Image, TouchableOpacity, ImageBackground } from 'react-native'
+import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import Searchshop from '../../components/Searchshop';
 import { images, icons } from '../../assets'

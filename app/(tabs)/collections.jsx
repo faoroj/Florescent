@@ -2,7 +2,6 @@ import { View, Text, ScrollView, Image } from 'react-native'
 import React from 'react'
 import Searchshop from '../../components/Searchshop';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { images } from '../../assets';
 import { categories } from '../../constants';
 
 const shadowStyles = {

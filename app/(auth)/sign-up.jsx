@@ -1,12 +1,11 @@
-import { View, Text, Image, ScrollView, TouchableOpacity, Dimensions } from 'react-native'
+import { View, Text, ScrollView, TouchableOpacity } from 'react-native'
 import React, { useState } from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { icons } from '../../assets'
 import CustomButton from '../../components/CustomButton'
 import SocialMediaButton from '../../components/SocialMediaButton'
-import { Link, router } from 'expo-router'
+import { router } from 'expo-router'
 import FormField from '../../components/FormField'
-import * as Linking from 'expo-linking';
 import { useFonts } from 'expo-font';
 
 const SignUp = () => {
